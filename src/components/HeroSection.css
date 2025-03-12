@@ -1,0 +1,40 @@
+.hero-container {
+    background: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 20px 10%;
+    height: 100dvh;
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    background: linear-gradient(to left, red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    color: transparent;
+    user-select: none;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 200% 0%
+    }
+
+    50% {
+        background-position: 0% -100%
+    }
+
+    100% {
+        background-position: -200% 0%
+    }
+
+
+}
+
+.name {
+    animation: rainbow 2s linear infinite;
+    transition: 0.3s;
+}
