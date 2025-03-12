@@ -1,12 +1,32 @@
 .hero-container {
-    background: #000;
+    background-image: url('/public/assets/wallpaper.png');
     display: flex;
+    flex-direction: column; 
     justify-content: flex-start;
-    align-items: start;
+    align-items: flex-start; 
     padding: 20px 10%;
     height: 100dvh;
     position: relative;
     z-index: 1;
+}
+
+.text, .name{
+    display: inline; 
+    font-size: 30px;
+}
+
+.mynameis{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    user-select: none;
+}
+
+.devtext{
+    font-size: 20px;
+    color: #9b9a9a;
+    font-weight: 500;
+    user-select: none;
 }
 
 .name {
@@ -16,45 +36,35 @@
     background-size: 200%;
     color: transparent;
     user-select: none;
-}
-
-@keyframes rainbow {
-    0% {
-        background-position: 200% 0%
-    }
-
-    50% {
-        background-position: 0% -100%
-    }
-
-    100% {
-        background-position: -200% 0%
-    }
-
-
-}
-
-.name {
     animation: rainbow 2s linear infinite;
     transition: 0.3s;
 }
 
+@keyframes rainbow {
+    0% { background-position: 200% 0% }
+    50% { background-position: 0% -100% }
+    100% { background-position: -200% 0% }
+}
+
+
 .presentation-frame {
     width: 800px;
     height: 200px;
-    position: relative;
+    position: absolute;
     display: flex;
     place-content: center;
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
     background: black; 
-    padding: 20px; 
+    padding: 20px;
     z-index: 1; 
     color: white;
     text-align: center;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
 
 .presentation-frame::before {
     content: "";
@@ -67,14 +77,9 @@
 }
 
 @keyframes rotBGimg {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-
 
 .presentation-frame::after {
     content: "";
@@ -82,5 +87,5 @@
     inset: 5px;
     background: black;
     border-radius: 15px;
-    z-index: -1; 
+    z-index: -1;
 }
