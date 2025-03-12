@@ -38,3 +38,49 @@
     animation: rainbow 2s linear infinite;
     transition: 0.3s;
 }
+
+.presentation-frame {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background: black; 
+    padding: 20px; 
+    z-index: 1; 
+    color: white;
+    text-align: center;
+}
+
+
+.presentation-frame::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(180deg, red, yellow, red);
+    animation: rotBGimg 3s linear infinite;
+    z-index: -2;
+}
+
+@keyframes rotBGimg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.presentation-frame::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background: black;
+    border-radius: 15px;
+    z-index: -1; 
+}
