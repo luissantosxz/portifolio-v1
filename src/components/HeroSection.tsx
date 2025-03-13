@@ -7,11 +7,11 @@ export default function HeroSection() {
   const [textAnimated, setTextAnimated] = useState("");
 
   function typeWriter() {
-    setIndex((prev) => prev + 1 % text.length);
+    setIndex((prev) => prev + (1 % text.length));
     setTextAnimated((prev) => prev + text.charAt(index));
   }
   useEffect(() => {
-    const interval = setInterval(typeWriter, 90);  
+    const interval = setInterval(typeWriter, 90);
     return () => clearInterval(interval);
   }, [index]);
 
@@ -20,14 +20,17 @@ export default function HeroSection() {
       <h1 className="mynameis">{textAnimated} &nbsp; </h1>
       <h1 className="name">Luis Fernando Dos Santos</h1>
       <span className="devtext">Desenvolvedor de sistemas</span>
+      <div className="buttons-container">
+        <button className="button-cv">Dowload CV</button>
+        <button className="button-contate-me">Entre em contato</button>
+      </div>
       <div className="presentation-frame">
         <h3>
-          Tenho 19 anos e sou um entusiasta
-          em desenvolvimento de sistemas. Adoro desenvolver soluções
-          criativas e estou constantemente procurando por novas aprendizagens em
-          tecnologias que possam melhorar minhas competências. Meu foco
-          principal é o desenvolvimento web, mas estou sempre aberto a novas
-          oportunidades e desafios.
+          Tenho 19 anos e sou um entusiasta em desenvolvimento de sistemas.
+          Adoro desenvolver soluções criativas e estou constantemente procurando
+          por novas aprendizagens em tecnologias que possam melhorar minhas
+          competências. Meu foco principal é o desenvolvimento web, mas estou
+          sempre aberto a novas oportunidades e desafios.
         </h3>
       </div>
     </div>

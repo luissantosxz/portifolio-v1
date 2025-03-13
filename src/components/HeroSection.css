@@ -89,3 +89,43 @@
     border-radius: 15px;
     z-index: -1;
 }
+
+.button-cv {
+    background: linear-gradient(to right, red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    color: transparent;
+    user-select: none;
+    animation: rainbow 2s linear infinite;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-contate-me {
+    background: linear-gradient(to right, red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    color: transparent;
+    user-select: none;
+    animation: rainbow 2s linear infinite;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.buttons-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
