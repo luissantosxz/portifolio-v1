@@ -35,7 +35,11 @@ export default function HeroSection() {
       </div>
 
       <div className="settings-card">
-
+        <div className="card-vscode">
+          <i className="fab fa-vscode"></i>
+          <h3>VSCode</h3>
+          <p>VS Code</p>
+        </div>
       </div>
     </div>
   );
