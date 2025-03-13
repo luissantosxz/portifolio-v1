@@ -33,6 +33,10 @@ export default function HeroSection() {
           sempre aberto a novas oportunidades e desafios.
         </h3>
       </div>
+
+      <div className="settings-card">
+
+      </div>
     </div>
   );
 }
