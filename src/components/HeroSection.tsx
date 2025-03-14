@@ -37,8 +37,18 @@ export default function HeroSection() {
       <div className="settings-card">
         <div className="card-vscode">
           <i className="fab fa-vscode"></i>
-          <h3>VSCode</h3>
-          <p>VS Code</p>
+          <img className="img-vs" src="/assets/vscode.png" />
+          <p className="text-settings-card">VS</p>
+        </div>
+        <div className="card-vscode">
+          <i className="fab fa-vscode"></i>
+          <img className="img-vs" src="/assets/github.png" />
+          <p className="text-settings-card">GITHUB</p>
+        </div>
+        <div className="card-vscode">
+          <i className="fab fa-vscode"></i>
+          <img className="img-vs" src="/assets/spotify.png" />
+          <p className="text-settings-card">SPOTIFY</p>
         </div>
       </div>
     </div>

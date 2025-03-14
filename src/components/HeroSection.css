@@ -1,10 +1,12 @@
 .hero-container {
-    background-image: url('/public/assets/wallpaper.png');
+    background-image: url('/public/assets/tiled_stars.gif');
+    background-size: contain;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: flex-start; 
-    padding: 20px 10%;
+    padding: 100px 10% 20px 10%;
     height: 100dvh;
     position: relative;
     z-index: 1;
@@ -74,7 +76,7 @@
     background: linear-gradient(180deg, red, yellow, red);
     animation: rotBGimg 3s linear infinite;
     z-index: -2;
-}
+} 
 
 @keyframes rotBGimg {
     0% { transform: rotate(0deg); }
@@ -131,29 +133,51 @@
 }
 
 .settings-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(5px);
     width: 600px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.8);
+    background: #111111a8;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    display: flex;
     position: absolute;
     left: 60%;
 }
 
+.text-settings-card{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: center;
+}
+
 .card-vscode {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
     width: 100%;
     height: 30%;
-    border: 2px solid #007ACC;
+    border: 2px solid #c5c3c33a;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    background: white;
+    background: rgb(56, 56, 56);
 }
 
 .card-vscode i {
     font-size: 50px;
     color: #007ACC;
     margin-bottom: 10px;
+}
+
+.img-vs{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #ffffff00;
+    display: flex;    
 }

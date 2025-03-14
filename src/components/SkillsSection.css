@@ -1,0 +1,11 @@
+.skill-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    padding: 100px 10% 20px 10%;
+    height: 100dvh;
+    position: relative;
+    z-index: 1;
+}
