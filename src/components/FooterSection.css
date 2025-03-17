@@ -1,28 +1,27 @@
 .footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .footer p {
-    font-size: 14px;
-  }
-  
-  .footer-icons {
-    margin-top: 10px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  .footer-icons a {
-    color: white;
-    font-size: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-icons a:hover {
-    color: gray;
-  }
-  
+  background: rgb(56, 56, 56);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: gray;
+}
