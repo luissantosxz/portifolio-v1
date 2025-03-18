@@ -10,6 +10,7 @@ export default function HeroSection() {
     setIndex((prev) => prev + (1 % text.length));
     setTextAnimated((prev) => prev + text.charAt(index));
   }
+  
   useEffect(() => {
     const interval = setInterval(typeWriter, 90);
     return () => clearInterval(interval);
