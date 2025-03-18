@@ -4,6 +4,7 @@ import FooterSection from "../components/FooterSection"
 import ProjectSection from "../components/ProjectsSection";
 
 
+
 export default function Home() {
   return (
     <div>
