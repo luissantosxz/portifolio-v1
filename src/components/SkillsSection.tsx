@@ -40,6 +40,11 @@ export default function SkillSection() {
           <img className="skill-image" src="/assets/vue.svg" />
         </div>
 
+        <div className="skill-card">
+        <text className="skills-text">PHP</text>
+          <img className="skill-image" src="/assets/php.svg" />
+        </div>
+
       </div>
     </div>
   );
