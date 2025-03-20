@@ -12,7 +12,9 @@
 }
 
 .text, .name{
+    width: 400px;
     display: inline; 
+    text-align: start;
     font-size: 3em;
 }
 

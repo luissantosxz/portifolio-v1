@@ -3,7 +3,7 @@ import "./HeroSection.css";
 
 export default function HeroSection() {
   const text = "Olá meu nome é ";
-  const text2 = "Luis Fernando Dos Santos :)";
+  const text2 = "Luis Fernando :)";
   
   const [index, setIndex] = useState(0);
   const [index2, setIndex2] = useState(0);
