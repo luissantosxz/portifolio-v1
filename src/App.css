@@ -16,3 +16,7 @@
 .App-link {
   color: #61dafb;
 }
+
+:root{
+  --background-color: rgb(0,0,5);
+}
