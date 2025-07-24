@@ -146,6 +146,7 @@
     padding: 16px;
     position: relative;
     background-color: transparent;
+    margin-top: 8px;
 }
 .botao:hover{
     cursor: pointer;
@@ -240,4 +241,19 @@
     border-radius: 100%;
     background: #ffffff00;
     display: flex;    
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;   
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag-lang{
+  background-color: rgb(56, 56, 56);
+  color: #ccc;
+  padding: 4px 8px;
+  border-radius: 3px;
+  user-select: none;
 }

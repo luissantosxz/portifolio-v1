@@ -3,6 +3,7 @@ import "../components/ProjectSection2.css";
 export default function ProjectSection2() {
   return (
     <div className="container">
+      <h1 className="project-title">Projetos</h1>
       <div className="box">
         <img className="img-project-section" src="https://i.pinimg.com/474x/46/3a/d0/463ad0b4f2a2da7480ed5c2b3fdeb47e.jpg"></img>
         <div className="content">

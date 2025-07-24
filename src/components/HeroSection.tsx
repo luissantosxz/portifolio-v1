@@ -4,7 +4,7 @@ import "./HeroSection.css";
 export default function HeroSection() {
   const text = "Olá meu nome é ";
   const text2 = "Luis Fernando :)";
-  
+
   const [index, setIndex] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [textAnimated, setTextAnimated] = useState("");
@@ -39,6 +39,15 @@ export default function HeroSection() {
           <h1 className="mynameis">{textAnimated} &nbsp; </h1>
           <h1 className="name">{textAnimated2}</h1>
           <span className="devtext">Desenvolvedor de sistemas</span>
+          <div className="tags">
+            <span className="tag-lang">React</span>
+            <span className="tag-lang">NodeJs</span>
+            <span className="tag-lang">JavaScript</span>
+            <span className="tag-lang">Java</span>
+            <span className="tag-lang">Vue.Js</span>
+            <span className="tag-lang">PHP</span>
+          </div>
+      
           <div className="buttons-container">
             <button className="botao">Dowload CV</button>
             <button className="botao">Entre em contato</button>
@@ -63,17 +72,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      {/* <div className="presentation-frame"> 
-        <h3>
-          Tenho 19 anos e sou um entusiasta em desenvolvimento de sistemas.
-          Adoro desenvolver soluções criativas e estou constantemente procurando
-          por novas aprendizagens em tecnologias que possam melhorar minhas
-          competências. Meu foco principal é o desenvolvimento web, mas estou
-          sempre aberto a novas oportunidades e desafios. 
-        </h3>
-      </div>
-      */}
     </div>
   );
 }
